@@ -18,6 +18,7 @@ public class BinarySearch {
         int high = arr.length - 1;
 
         while (low <= high) {
+            // to prevent integer overflow when calculating the midpoint in a binary search
             int mid = low + (high - low) / 2;
 
             if (arr[mid] == key) {
