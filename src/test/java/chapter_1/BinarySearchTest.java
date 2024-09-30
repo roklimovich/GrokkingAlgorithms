@@ -14,6 +14,7 @@ public class BinarySearchTest {
         int foundIndex = BinarySearch.binarySearch(array, key);
 
         Assertions.assertEquals(expectedIndex, foundIndex);
+        Assertions.assertTrue(foundIndex != 10);
     }
 
     @Test
@@ -57,5 +58,4 @@ public class BinarySearchTest {
 
         Assertions.assertEquals(expectedIndex, foundIndex);
     }
-
 }
