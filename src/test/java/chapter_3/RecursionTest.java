@@ -33,4 +33,25 @@ public class RecursionTest {
         Assertions.assertNotEquals(unExpectedValue, result);
         Assertions.assertEquals(expectedValue, result);
     }
+
+    @Test
+    public void checkIsPalindrome() {
+        String word = "level";
+        boolean result = Recursion.isPalindrome(word);
+        boolean expectedResult = true;
+        String word1 = "java";
+        boolean result1 = Recursion.isPalindrome(word1);
+
+        Assertions.assertEquals(expectedResult, result);
+        Assertions.assertNotEquals(expectedResult, result1);
+    }
+
+    @Test
+    public void findRecursivelyLength() {
+        String word = "level";
+        int result = Recursion.recursiveLength(word);
+        int expectedResult = 5;
+
+        Assertions.assertEquals(expectedResult, result);
+    }
 }
