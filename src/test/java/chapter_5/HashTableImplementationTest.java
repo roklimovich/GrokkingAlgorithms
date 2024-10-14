@@ -20,5 +20,4 @@ public class HashTableImplementationTest {
         Assertions.assertFalse(result.isEmpty());
     }
 
-
 }

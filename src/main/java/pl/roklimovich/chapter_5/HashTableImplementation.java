@@ -99,7 +99,7 @@ public class HashTableImplementation {
     private static void getHashCodes() {
 
         for (String value : phoneBook.keySet()) {
-            System.out.print(phoneBook.get(value).hashCode() +  " ");
+            System.out.print(phoneBook.get(value).hashCode() + " ");
         }
 
         System.out.println("\n");
